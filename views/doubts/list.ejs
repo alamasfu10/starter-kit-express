@@ -1,0 +1,8 @@
+<h1>Doubts list</h1>
+
+<% for(var i=0; i<doubts.length; i++) {%>
+   <strong><%= doubts[i].title %></strong>
+   <p><%= doubts[i].description %></p>
+   <a href="/doubts/delete/<%= doubts[i].id %>">Borrar</a>
+   <hr>
+<% } %>
