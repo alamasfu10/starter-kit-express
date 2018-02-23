@@ -1,0 +1,63 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-index-menu;
+
+  background-color: $color-white;
+  box-shadow: 0 8px 6px -6px $color-gray;
+
+  transition: background-color $transition-duration-default, box-shadow $transition-duration-default;
+
+  &__content {
+    @include make-container();
+  }
+
+  &__logo {
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-top: $space-base;
+    padding-bottom: $space-base;
+
+    transition: padding-top $transition-duration-default, padding-bottom $transition-duration-default;
+  }
+
+  &__item {
+    & > a {
+      @include unstyled-link();
+
+      cursor: pointer;
+      padding: $space-base;
+
+      transition: color $transition-duration-default;
+
+      &:hover {
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+
+  &--expanded {
+    background-color: transparent;
+    box-shadow: none;
+
+    & .menu__items {
+      padding-top: $space-l;
+      padding-bottom: $space-l;
+    }
+
+    & .menu__item {
+      > a {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+// TODO: Mobile Menu

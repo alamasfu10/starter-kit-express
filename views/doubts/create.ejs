@@ -1,16 +1,24 @@
-<h1>Create Doubt</h1>
+<br>
+<br>
+<br>
+
+<h1 class="headline">Create Doubt</h1>
 
 <form action="" method="post">
-  <input type="text" name="title" placeholder="Title">
-  <% if(errors && errors.title) {%>
-    <div><%- errors.title %></div>
-  <%}%>
-  <br>
-  <textarea name="description" rows="4" cols="80" placeholder="Description"></textarea>
-  <% if(errors && errors.description) {%>
-    <div><%- errors && errors.description %></div>
-  <%}%>
-  <br>
+  <div class="input <% if(errors && errors.title) {%>input--error<%}%>">
+    <div class="input__label">Title</div>
+    <input type="text" name="title">
+    <% if(errors && errors.title) {%>
+      <div class="input__error"><%- errors.title %></div>
+    <%}%>
+  </div>
+  <div class="input <% if(errors && errors.description) {%>input--error<%}%>">
+    <div class="input__label">Description</div>
+    <textarea name="description" rows="4" cols="80"></textarea>
+    <% if(errors && errors.description) {%>
+      <div><%- errors && errors.description %></div>
+    <%}%>
+  </div>
   <a href="/doubts">Cancel</a>
   <input type="submit" value="Create">
 </form>

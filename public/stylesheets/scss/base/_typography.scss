@@ -1,0 +1,21 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/fonts/HelveticaNeueLight.ttf');
+}
+
+@font-face {
+  font-family: Code;
+  src: url('/fonts/CODE-Bold.otf');
+}
+
+@font-face {
+  font-family: Code;
+  src: url('/fonts/CODE-Light.otf');
+  font-weight: $font-weight-light;
+}
+
+body {
+  color: $color-text;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}

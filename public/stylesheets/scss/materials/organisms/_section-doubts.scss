@@ -1,0 +1,7 @@
+.section-doubts {
+  @include make-container();
+
+  &__doubts {
+    @include span(12);
+  }
+}

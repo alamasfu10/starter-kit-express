@@ -1,0 +1,22 @@
+.social {
+  $social-icon-size: 30px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__item {
+    @include unstyled_link();
+
+    height: $social-icon-size;
+    width: $social-icon-size;
+
+    margin-left: $space-xs;
+    margin-right: $space-xs;
+
+    & > img {
+      height: inherit;
+      width: inherit;
+    }
+  }
+}

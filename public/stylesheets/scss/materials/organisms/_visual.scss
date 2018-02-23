@@ -1,0 +1,62 @@
+.visual {
+  $visual-arrow-size: 30px;
+  $visual-min-height: 500px;
+
+  position: relative;
+  height: 75vh;
+  min-height: $visual-min-height;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.15);  // Overlay
+    font-family: $font-family-alt;
+    letter-spacing: 5px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: $font-size-xxl;
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: $color-white;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-light;
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: $space-base;
+    height: $visual-arrow-size;
+    width: $visual-arrow-size;
+
+    background-image: url('/images/angle-arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-15px);
+      }
+    }
+
+    animation: bounce 1s infinite ease-in-out alternate;
+  }
+}

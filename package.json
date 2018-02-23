@@ -2,22 +2,31 @@
   "name": "starter-kit-express",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node:": "8.9.4"
+  },
   "scripts": {
     "start": "nodemon ./bin/www",
     "populate-db": "node configs/db.populate.js"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
+    "bootstrap": "^4.0.0",
+    "browserify-middleware": "^8.0.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.15.5",
     "express-ejs-layouts": "^2.3.1",
+    "jquery": "^3.3.1",
     "mongoose": "^5.0.6",
     "morgan": "~1.9.0",
     "node-sass": "^4.7.2",
     "node-sass-middleware": "^0.11.0",
     "nodemon": "^1.15.1",
-    "serve-favicon": "~2.4.5"
+    "normalize.css": "^8.0.0",
+    "scut": "^1.4.0",
+    "serve-favicon": "~2.4.5",
+    "susy": "^2.2.12"
   }
 }

@@ -1,0 +1,17 @@
+.button {
+  // Blue border, white color
+  // Blue background
+
+  &:hover {
+    // darken (10%)
+  }
+
+  &--red {
+    // Red color, red border
+    // White background
+
+    &:hover {
+      // border-width -> 2px
+    }
+  }
+}

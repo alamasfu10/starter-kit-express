@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const DB_NAME = 'starter-kit-express';
-const MONGO_URI = `mongodb://localhost/${DB_NAME}`;
+const MONGO_URI = process.env.MONGODB_URI || `mongodb://localhost/${DB_NAME}`;
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URI)

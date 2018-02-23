@@ -7,12 +7,40 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/doubts">List of doubts</a></li>
-      <li><a href="/doubts/create">New doubt</a></li>
-    </ul>
+    <div class="menu">
+      <div class="menu__content">
+        <div class="menu__logo"></div>
+        <div class="menu__items">
+          <div class="menu__item">
+            <a href="/">Home</a>
+          </div>
+          <div class="menu__item">
+            <a href="/contact">Contact</a>
+          </div>
+          <div class="menu__item">
+            <a href="/doubts">List of doubts</a>
+          </div>
+          <div class="menu__item">
+            <a href="/doubts/create">New doubt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+      TODO:
+      1) Browserify or webpack dependencies, so we can use the node_modules via require,
+          - require() is not allowed in browsers
+
+      2) Search for {{ DjangoBlocks }} in express, so scripts can be aded later
+    -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+
     <%- body -%>
+
+    <!-- TODO: scripts should be here -->
   </body>
 </html>

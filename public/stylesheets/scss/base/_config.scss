@@ -1,0 +1,97 @@
+// Typography
+// -------------------------------------------
+
+// Font families
+$font-family-base:    HelveticaNeue, sans-serif;
+$font-family-alt:     Code, $font-family-base;
+
+// Font sizes
+$font-size-sm:        12px;
+$font-size-base:      16px;
+$font-size-lg:        20px;
+$font-size-xl:        36px;
+$font-size-xxl:       70px;
+
+// Font weights
+$font-weight-light:   100;
+$font-weight-normal:  400;
+$font-weight-bold:    700;
+
+
+// Colors
+// -------------------------------------------
+
+// Base
+$color-white:          #ffffff;
+$color-gray-light:     #f0f0f0;
+$color-gray:           #e4e4e4;
+$color-gray-dark:      #999999;
+$color-black:          #202020;
+
+// Main
+$color-blue:           #6e90f1;
+$color-red:            #e50000;
+
+
+// Semantic Colors
+// -------------------------------------------
+
+$color-bg:             $color-white;
+$color-bg-light:       $color-gray-light;
+$color-text:           $color-black;
+
+
+// Transitions
+// -------------------------------------------
+
+$transition-duration-default:  0.30s;
+
+
+// Layout
+// -------------------------------------------
+
+$space-xs:              7px;
+$space-s:               10px;
+$space-base:            15px;
+$space-l:               30px;
+$space-xl:              45px;
+$space-xxl:             60px;
+
+$space-section-top:     $space-xxl;
+$space-section-bottom:  $space-xxl;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1174px
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 544px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+$gutter-width:            $space-base;
+$column-width:            $gutter-width;
+
+$susy: (
+  container: 100%,
+  columns: 12,
+  math: fluid,
+  column-width: $column-width,
+  gutters: 1,
+  gutter-position: inside-static,
+  global-box-sizing: border-box
+);
+
+
+// Z-index: sorted from top to bottom
+// -------------------------------------------
+$z-index-top:            100;
+$z-index-base:           0;
+
+$z-index-menu:           $z-index-top;

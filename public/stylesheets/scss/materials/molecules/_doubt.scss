@@ -1,0 +1,34 @@
+.doubt {
+
+  &__title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    margin-bottom: $space-base;
+  }
+
+  &__description {
+    margin-bottom: $space-base;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__date {
+    color: $color-gray-dark;
+  }
+
+  &__delete {
+    > a {
+      @include unstyled_link();
+
+      color: $color-red;
+
+      &:hover {
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+}

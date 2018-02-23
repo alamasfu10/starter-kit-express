@@ -1,5 +1,29 @@
-body {
-  padding: 50px;
-  font-size: 16px;
-  font-family: sans-serif;
-}
+// Third Party libraries
+@import "../../node_modules/scut/dist/scut";
+@import "../../node_modules/susy/sass/susy";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../../node_modules/normalize.css/normalize";
+
+// Base
+@import 'scss/base/bootstrap';
+@import 'scss/base/config';
+@import 'scss/base/typography';
+
+// Mixins
+@import 'scss/mixins/make-container';
+@import 'scss/mixins/section';
+@import 'scss/mixins/unstyled-link';
+
+// Materials - Atoms
+@import 'scss/materials/atoms/headline';
+@import 'scss/materials/atoms/input';
+
+// Materials - Molecules
+@import 'scss/materials/molecules/doubt';
+@import 'scss/materials/molecules/social';
+
+// Materials - Organisms
+@import 'scss/materials/organisms/menu';
+@import 'scss/materials/organisms/section-doubts';
+@import 'scss/materials/organisms/section-text';
+@import 'scss/materials/organisms/visual';
